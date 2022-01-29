@@ -6,5 +6,6 @@
     "allAboutClubs": "all about clubs",
     "@allAboutClubs":{
         "description": "App name"
-    }
+    },
+    "millions":"millions"
 }
