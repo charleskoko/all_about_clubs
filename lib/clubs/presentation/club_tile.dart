@@ -1,5 +1,7 @@
 import 'package:all_about_clubs/clubs/domain/club.dart';
+import 'package:all_about_clubs/core/shared/colors.dart';
 import 'package:all_about_clubs/core/shared/extension.dart';
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
@@ -13,7 +15,7 @@ class ClubTile extends StatelessWidget {
       decoration: const BoxDecoration(
         border: Border(
           bottom: BorderSide(
-            color: Colors.black,
+            color: kBlack,
             width: 0.3,
           ),
         ),
@@ -22,9 +24,16 @@ class ClubTile extends StatelessWidget {
       child: Row(
         children: [
           Expanded(
-            child: Container(
-              padding: const EdgeInsets.only(top: 15, bottom: 15),
-              child: Image.network(club.image ?? ''),
+            child: SizedBox(
+              height: 70,
+              width: 70,
+              child: Container(
+                padding: const EdgeInsets.only(top: 15, bottom: 15),
+                decoration: BoxDecoration(
+                    image: DecorationImage(
+                  image: CachedNetworkImageProvider(club.image ?? ''),
+                )),
+              ),
             ),
           ),
           Expanded(
@@ -52,7 +61,7 @@ class ClubTile extends StatelessWidget {
                     club.country ?? '',
                     style: const TextStyle(
                       fontSize: 10,
-                      color: Colors.grey,
+                      color: kGrey,
                       fontWeight: FontWeight.bold,
                     ),
                   ),

@@ -4,5 +4,6 @@ class NoConnection extends RemoteResponse {}
 
 class ConnectionResponse<T> extends RemoteResponse {
   final T response;
-  ConnectionResponse(this.response);
+  final String? filter;
+  ConnectionResponse(this.response, this.filter);
 }

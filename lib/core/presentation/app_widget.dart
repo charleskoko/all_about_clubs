@@ -11,7 +11,6 @@ import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 final initializationProvider = FutureProvider((ref) async {
   await ref.read(sembastProvider).init();
   final clubsNotifier = ref.read(clubsNotifierProvider.notifier);
-  await clubsNotifier.getClubs();
 });
 
 class AppWidget extends ConsumerWidget {
@@ -25,9 +24,7 @@ class AppWidget extends ConsumerWidget {
       routeInformationParser: AppRouter.router.routeInformationParser,
       routerDelegate: AppRouter.router.routerDelegate,
       title: 'All about clubs',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
+      theme: ThemeData(appBarTheme: AppBarTheme(color: kGreen)),
       localizationsDelegates: const [
         AppLocalizations.delegate, // Add this line
         GlobalMaterialLocalizations.delegate,

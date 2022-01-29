@@ -1,6 +1,7 @@
 {
     "language": "Polish",
     "allAboutClubs": "All about clubs",
-    "millions":"miliony"
-
+    "millions":"miliony",
+    "errorMessageText":"Wystąpił błąd, proszę ponowić próbę",
+    "errorSubtitle": "Api zwróciło {errorCode} kod błędu"
 }

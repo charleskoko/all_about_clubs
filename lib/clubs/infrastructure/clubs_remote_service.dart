@@ -8,7 +8,7 @@ class ClubsRemoteService {
   final Dio _dio;
   ClubsRemoteService(this._dio);
 
-  Future<RemoteResponse> getClubs() async {
+  Future<RemoteResponse> getClubs(String filter) async {
     final requestUri =
         Uri.https('public.allaboutapps.at', '/hiring/clubs.json');
     try {
@@ -18,8 +18,11 @@ class ClubsRemoteService {
         final convertedData = (response.data as List<dynamic>)
             .map((e) => Club.fromJson(e as Map<String, dynamic>))
             .toList();
-        convertedData.sort((a, b) => (a.name!.compareTo(b.name ?? '')));
-        return ConnectionResponse<List<Club>>(convertedData);
+        (filter == 'name')
+            ? convertedData.sort((a, b) => (a.name!.compareTo(b.name ?? '')))
+            : convertedData.sort((a, b) => (b.value!.compareTo(a.value!)));
+
+        return ConnectionResponse<List<Club>>(convertedData, filter);
       } else {
         throw RestApiException(response.statusCode);
       }

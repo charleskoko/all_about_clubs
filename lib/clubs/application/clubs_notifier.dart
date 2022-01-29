@@ -24,9 +24,9 @@ class ClubsNotifier extends StateNotifier<ClubsState> {
   final ClubsRepository _clubsRepository;
   ClubsNotifier(this._clubsRepository) : super(InitialState());
 
-  Future<void> getClubs() async {
+  Future<void> getClubs(String filter) async {
     state = LoadingInProgressState();
-    final failureOrClubs = await _clubsRepository.getClubs();
+    final failureOrClubs = await _clubsRepository.getClubs(filter);
     state = failureOrClubs.fold(
       (l) => LoadFailureState(clubFailure: l),
       (r) => LoadingSuccessState(clubs: r),

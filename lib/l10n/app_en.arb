@@ -7,5 +7,15 @@
     "@allAboutClubs":{
         "description": "App name"
     },
-    "millions":"millions"
+    "millions":"millions",
+    "errorMessageText":"An error occurred, please, retry",
+    "errorSubtitle":"Api returned {errorCode} error code",
+    "@errorSubtitle":{
+        "description":"",
+        "placeholders":{
+            "errorCode": {
+                "type":"int"
+            }
+        }
+    }
 }
