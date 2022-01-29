@@ -1,5 +1,6 @@
 import 'package:all_about_clubs/clubs/infrastructure/providers.dart';
 import 'package:all_about_clubs/core/presentation/app_router.dart';
+import 'package:all_about_clubs/core/shared/colors.dart';
 import 'package:all_about_clubs/core/shared/providers.dart';
 import 'package:all_about_clubs/l10n/l10n.dart';
 import 'package:flutter/material.dart';
