@@ -1,7 +1,6 @@
 import 'package:all_about_clubs/clubs/application/clubs_notifier.dart';
 import 'package:all_about_clubs/clubs/infrastructure/providers.dart';
 import 'package:all_about_clubs/clubs/presentation/club_tile.dart';
-import 'package:all_about_clubs/core/presentation/toast.dart';
 import 'package:all_about_clubs/core/shared/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
