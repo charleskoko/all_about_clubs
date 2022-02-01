@@ -4,7 +4,7 @@ class Club {
   String? country;
   int? value;
   String? image;
-  int? europeanTitle;
+  int? europeanTitles;
 
   Club(
     this.id,
@@ -12,7 +12,7 @@ class Club {
     this.country,
     this.value,
     this.image,
-    this.europeanTitle,
+    this.europeanTitles,
   );
 
   Club.fromJson(Map<String, dynamic> json) {
@@ -21,7 +21,7 @@ class Club {
     country = json['country'.toString()];
     value = json['value'];
     image = json['image'].toString();
-    europeanTitle = json['european_title'];
+    europeanTitles = json['european_titles'];
   }
 
   Map<String, dynamic> toJson() => {
@@ -30,6 +30,6 @@ class Club {
         'country': country,
         'value': value,
         'image': image,
-        'europeanTitle': europeanTitle,
+        'european_titles': europeanTitles,
       };
 }

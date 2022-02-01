@@ -15,13 +15,14 @@ class ClubsListView extends StatelessWidget {
       builder: (context, ref, child) {
         final clubsNotifierState = ref.watch(clubsNotifierProvider);
         if ((clubsNotifierState is LoadingSuccessState)) {
-          return ListView.builder(
-            itemCount: clubsNotifierState.clubs.entity.length,
-            itemBuilder: (context, index) => ClubTile(
-              club: clubsNotifierState.clubs.entity[index],
-            ),
-          );
-        } else {
+            return ListView.builder(
+              itemCount: clubsNotifierState.clubs.entity.length,
+              itemBuilder: (context, index) => ClubTile(
+                club: clubsNotifierState.clubs.entity[index],
+              ),
+            );
+          }
+         else {
           if ((clubsNotifierState is LoadFailureState)) {
             return ListTileTheme(
               textColor: kWhite,

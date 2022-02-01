@@ -3,6 +3,7 @@
     "allAboutClubs": "all about clubs",
     "millions":"Millionen",
     "errorMessageText":"Es ist ein Fehler aufgetreten, bitte versuchen Sie es erneut",
-    "errorSubtitle":"Api hat {errorCode} Fehlercode zurückgegeben"
+    "errorSubtitle":"Api hat {errorCode} Fehlercode zurückgegeben",
+    "descriptionText": "Der {club} aus {country} hat einen Wert von {value} Millionen Euro. {club} konnte bislang {europeanTitle} Siege auf europäisher Ebene erreichen."
 
 }

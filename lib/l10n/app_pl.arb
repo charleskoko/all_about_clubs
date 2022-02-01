@@ -3,5 +3,7 @@
     "allAboutClubs": "All about clubs",
     "millions":"miliony",
     "errorMessageText":"Wystąpił błąd, proszę ponowić próbę",
-    "errorSubtitle": "Api zwróciło {errorCode} kod błędu"
+    "errorSubtitle": "Api zwróciło {errorCode} kod błędu",
+    "descriptionText": "Wartość klubu {club} z Ełku wynosi {value} milionów euro. {club} wygrał do tej pory {europeanTitle} meczów na poziomie europejskim."
+
 }

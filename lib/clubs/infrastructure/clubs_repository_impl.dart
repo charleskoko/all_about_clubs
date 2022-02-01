@@ -7,7 +7,6 @@ import 'package:all_about_clubs/core/domain/fresh.dart';
 import 'package:all_about_clubs/core/infrastructure/network_exceptions.dart';
 import 'package:all_about_clubs/core/infrastructure/remote_response.dart';
 import 'package:dartz/dartz.dart';
-import 'package:sembast/sembast.dart';
 
 class ClubsRepositoryImpl extends ClubsRepository {
   final ClubsRemoteService _remoteService;
@@ -23,8 +22,15 @@ class ClubsRepositoryImpl extends ClubsRepository {
       final remoteItems = await _remoteService.getClubs(filter);
       if (remoteItems is ConnectionResponse) {
         await _localService.upsertClub(remoteItems.response);
-      } else {
-        clubs = await _localService.getPage(filter);
+      }else {
+        try{
+          clubs = await _localService.getPage(filter);
+          if(clubs.isEmpty){
+            return left(ClubFailure.api(408));
+          }
+        } catch (exception){
+          return left(ClubFailure.api(408));
+        }
       }
       return right((remoteItems is ConnectionResponse)
           ? Fresh.yes(entity: remoteItems.response, filter: filter)

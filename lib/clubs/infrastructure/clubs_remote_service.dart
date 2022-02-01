@@ -2,6 +2,7 @@ import 'package:all_about_clubs/clubs/domain/club.dart';
 import 'package:all_about_clubs/core/infrastructure/dio_extension.dart';
 import 'package:all_about_clubs/core/infrastructure/network_exceptions.dart';
 import 'package:all_about_clubs/core/infrastructure/remote_response.dart';
+import 'package:all_about_clubs/core/shared/Api_end_point.dart';
 import 'package:dio/dio.dart';
 
 class ClubsRemoteService {
@@ -10,7 +11,7 @@ class ClubsRemoteService {
 
   Future<RemoteResponse> getClubs(String filter) async {
     final requestUri =
-        Uri.https('public.allaboutapps.at', '/hiring/clubs.json');
+        Uri.https(ApiEndPoint.baseUrl, ApiEndPoint.clubs);
     try {
       final response = await _dio.getUri(requestUri,
           options: Options(headers: {'Accept': 'application/json'}));

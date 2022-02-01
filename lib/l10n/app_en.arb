@@ -17,5 +17,25 @@
                 "type":"int"
             }
         }
+    },
+    
+    "descriptionText": "{club} from {country} has a value of {value} million euros. {club} has so far achieved {europeanTitle} victories at the European level.",
+    "@descriptionText":{
+        "description":"",
+        "placeholders":{
+            "club": {
+                "type":"String"
+            },
+            "country": {
+                "type":"String"
+            },
+            "value": {
+                "type":"int"
+            },
+            "europeanTitle": {
+                "type":"int"
+            }
+        }
     }
+
 }
