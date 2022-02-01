@@ -1,7 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.allaboutclubs.all_about_clubs">
+    <uses-permission android:name="android.permission.INTERNET"/>
    <application
-        android:label="all_about_clubs"
+        android:label="All About Clubs"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

@@ -38,9 +38,3 @@ class ClubsRemoteService {
     }
   }
 }
-  
-
-
-// Todo: Dio error extension
-// Todo: Terminer Clubs remote services
-//Todo: Faire le Dio extension
