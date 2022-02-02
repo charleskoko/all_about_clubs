@@ -3,10 +3,19 @@
     "@language":{
         "description":"The current language"
     },
+
     "allAboutClubs": "all about clubs",
     "@allAboutClubs":{
         "description": "App name"
     },
+    "deutschland":"Germany",
+    "spanien":"Spain",
+    "italien":"Italian",
+    "frankreich":"France",
+    "osterreich":"Austria",
+    "england":"England",
+    "niederlande":"Netherlands",
+
     "millions":"millions",
     "errorMessageText":"An error occurred, please, retry",
     "errorSubtitle":"Api returned {errorCode} error code",
@@ -19,7 +28,7 @@
         }
     },
     
-    "descriptionText": "{club} from {country} has a value of {value} million euros. {club} has so far achieved {europeanTitle} victories at the European level.",
+    "descriptionText": "The club {club} from {country} has a value of {value} million euros. {club} has achieved {europeanTitle} victories at the European level so far.",
     "@descriptionText":{
         "description":"",
         "placeholders":{
@@ -37,5 +46,4 @@
             }
         }
     }
-
 }

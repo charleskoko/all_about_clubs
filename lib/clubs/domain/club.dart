@@ -18,7 +18,7 @@ class Club {
   Club.fromJson(Map<String, dynamic> json) {
     id = json['id'].toString();
     name = json['name'].toString();
-    country = json['country'.toString()];
+    country = json['country'].toString();
     value = json['value'];
     image = json['image'].toString();
     europeanTitles = json['european_titles'];

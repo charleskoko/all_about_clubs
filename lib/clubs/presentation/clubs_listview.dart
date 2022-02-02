@@ -34,10 +34,11 @@ class ClubsListView extends StatelessWidget {
                   subtitle: Text(AppLocalizations.of(context)!.errorSubtitle(
                       clubsNotifierState.clubFailure.errorCode!)),
                   leading: const SizedBox(
-                      height: double.infinity,
-                      child: Icon(
-                        Icons.warning,
-                      )),
+                    height: double.infinity,
+                    child: Icon(
+                      Icons.warning,
+                    ),
+                  ),
                   trailing: IconButton(
                     icon: const Icon(Icons.refresh),
                     onPressed: () {

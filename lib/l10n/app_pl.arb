@@ -4,6 +4,13 @@
     "millions":"miliony",
     "errorMessageText":"Wystąpił błąd, proszę ponowić próbę",
     "errorSubtitle": "Api zwróciło {errorCode} kod błędu",
-    "descriptionText": "Wartość klubu {club} z Ełku wynosi {value} milionów euro. {club} wygrał do tej pory {europeanTitle} meczów na poziomie europejskim."
+    "descriptionText": "Wartość klubu {club} z Ełku wynosi {value} milionów euro. {club} wygrał do tej pory {europeanTitle} meczów na poziomie europejskim.",
+    "deutschland":"Niemcy",
+    "spanien":"Hiszpania",
+    "italien":"Włochy",
+    "frankreich":"Francja",
+    "österreich":"Austria",
+    "england":"Anglia",
+    "niederlande":"Netherlands"
 
 }

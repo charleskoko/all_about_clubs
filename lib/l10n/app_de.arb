@@ -4,6 +4,13 @@
     "millions":"Millionen",
     "errorMessageText":"Es ist ein Fehler aufgetreten, bitte versuchen Sie es erneut",
     "errorSubtitle":"Api hat {errorCode} Fehlercode zurückgegeben",
-    "descriptionText": "Der {club} aus {country} hat einen Wert von {value} Millionen Euro. {club} konnte bislang {europeanTitle} Siege auf europäisher Ebene erreichen."
+    "descriptionText": "Der Club {club} aus {country} hat einen Wert von {value} Millionen Euro. {club} konnte bislang {europeanTitle} Siege auf europäischer Ebene erreichen.",
+    "deutschland":"Deutschland",
+    "spanien":"Spanien",
+    "italien":"Italien",
+    "frankreich":"Frankreich",
+    "österreich":"Österreich",
+    "england":"England",
+    "niederlande":"Niederlande"
 
 }

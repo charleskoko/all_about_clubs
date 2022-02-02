@@ -16,7 +16,12 @@ class ClubTile extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        context.goNamed('details', params: {'id': jsonEncode(club),},);
+        context.goNamed(
+          'details',
+          params: {
+            'id': jsonEncode(club),
+          },
+        );
       },
       child: Container(
         decoration: const BoxDecoration(
